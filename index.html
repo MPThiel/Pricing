@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pricing Switcher</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Heebo:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="pricing">
+      <div class="pricing-slider">
+        <label class="form-slider">
+          <span>Price of your Home</span>
+          <input
+            type="range"
+            value="1"
+            data-price-input='{
+                "0": "Less than N$1,000,000",
+                "1": "N$1,200,000",
+                "2": "N$1,500,000",
+                "3": "N$1,750,000",
+                "4": "N$2,000,000",
+                "5": "N$2,500,000",
+                "6": "N$3,000,000",
+                "7": "N$3,500,000",
+                "8": "N$4,000,000",
+                "9": "N$4,000,000+"                        
+              }'
+          />
+        </label>
+        <div class="pricing-slider-value"></div>
+      </div>
+
+      <div class="pricing-items">
+        <div class="pricing-item">
+          <div class="pricing-item-inner">
+            <div class="pricing-item-content">
+              <div class="pricing-item-header">
+                <div class="pricing-item-title">Our Fixed FEE</div>
+                <div
+                  class="pricing-item-price"
+                  data-price-output='{
+                    "0": ["N$", "39,995", "excl. VAT"],
+                    "1": ["N$", "39,995", "excl. VAT"],
+                    "2": ["N$", "43,995", "excl. VAT"],
+                    "3": ["N$", "54,995", "excl. VAT"],
+                    "4": ["N$", "64,995", "excl. VAT"],
+                    "5": ["N$", "69,995", "excl. VAT"],
+                    "6": ["N$", "79,995", "excl. VAT"],
+                    "7": ["N$", "89,995", "excl. VAT"],
+                    "8": ["N$", "99,995", "excl. VAT"],
+                    "9": ["N$", "3.0%", "excl. VAT"]
+                  }'
+                >
+                  <span class="pricing-item-price-currency"></span>
+                  <span class="pricing-item-price-amount"></span>
+                  <span class="pricing-item-price-after"></span>
+                </div>
+              </div>
+              <div class="pricing-item-features">
+                <ul class="pricing-item-features-list">
+                  <li class="is-checked">Comprehensive Guidance</li>
+                  <li class="is-checked">Access professional dashboard</li>
+                  <li class="is-checked">Post-sale admin assistance</li>
+                  <li>Excepteur sint occaecat</li>
+                  <li>Excepteur sint occaecat</li>
+                </ul>
+              </div>
+            </div>
+            <div class="pricing-item-cta">
+              <a class="button" href="#">ENQUIRE NOW</a>
+            </div>
+          </div>
+        </div>
+    <script src="pricing-slider.js"></script>
+  </body>
+</html>
